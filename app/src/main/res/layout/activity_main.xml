@@ -31,13 +31,25 @@
             app:tabMode="fixed" />
 
     </com.google.android.material.appbar.AppBarLayout>
-
     <androidx.viewpager.widget.ViewPager
+
         android:id="@+id/myViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-        />
+/>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="664dp"
+        android:layout_marginTop="10dp"
+
+        app:layout_anchor="@+id/myViewPager"
+        app:layout_anchorGravity="center" />
+
+
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

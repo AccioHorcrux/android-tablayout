@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AtoBFragment">
+    android:orientation="vertical">
 
+    <EditText
+        android:id="@+id/et_source"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:editable="false"
+        android:text="    SOURCE"
+        android:textColor="@android:color/darker_gray" />
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="30dp"
-        android:text= "@string/hello_blank_fragment2" />
+    <EditText
+        android:id="@+id/et_des"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:editable="false"
+        android:text="    DESTINATION"
+        android:textColor="@android:color/darker_gray" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/et_btn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/red100"
+        android:text="Search"
+        android:textColor="@color/white" />
+</LinearLayout>
